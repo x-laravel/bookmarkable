@@ -1,0 +1,53 @@
+{
+    "name": "x-laravel/bookmarkable",
+    "description": "Bookmarks for Eloquent models with private or shared folders and a default folder for one-tap saving.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "eloquent", "bookmark", "bookmarkable", "folders", "collections"],
+    "authors": [
+        {
+            "name": "Mehmet ÖĞMEN",
+            "email": "www@mehmetogmen.com.tr",
+            "homepage": "https://www.mehmetogmen.com.tr",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "illuminate/console": "^13.0",
+        "illuminate/contracts": "^13.0",
+        "illuminate/database": "^13.0",
+        "illuminate/support": "^13.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "orchestra/testbench": "^11.0",
+        "phpunit/phpunit": "^11.5 || ^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "XLaravel\\Bookmarkable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "XLaravel\\Bookmarkable\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "XLaravel\\Bookmarkable\\BookmarkableServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "analyse": "phpstan analyse",
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
